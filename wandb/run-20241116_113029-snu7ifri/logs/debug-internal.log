@@ -1,0 +1,563 @@
+2024-11-16 11:30:38,268 INFO    StreamThr :19620 [internal.py:wandb_internal():86] W&B internal server running at pid: 19620, started at: 2024-11-16 11:30:38.267766
+2024-11-16 11:30:38,269 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status
+2024-11-16 11:30:38,270 INFO    WriterThread:19620 [datastore.py:open_for_write():87] open: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\run-snu7ifri.wandb
+2024-11-16 11:30:38,273 DEBUG   SenderThread:19620 [sender.py:send():379] send: header
+2024-11-16 11:30:38,274 DEBUG   SenderThread:19620 [sender.py:send():379] send: run
+2024-11-16 11:30:38,932 INFO    SenderThread:19620 [dir_watcher.py:__init__():211] watching files in: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files
+2024-11-16 11:30:38,932 INFO    SenderThread:19620 [sender.py:_start_run_threads():1124] run started: snu7ifri with start time 1731736837.721475
+2024-11-16 11:30:38,949 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: check_version
+2024-11-16 11:30:38,950 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: check_version
+2024-11-16 11:30:39,004 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: run_start
+2024-11-16 11:30:39,020 DEBUG   HandlerThread:19620 [system_info.py:__init__():26] System info init
+2024-11-16 11:30:39,021 DEBUG   HandlerThread:19620 [system_info.py:__init__():41] System info init done
+2024-11-16 11:30:39,021 INFO    HandlerThread:19620 [system_monitor.py:start():194] Starting system monitor
+2024-11-16 11:30:39,021 INFO    SystemMonitor:19620 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-11-16 11:30:39,022 INFO    HandlerThread:19620 [system_monitor.py:probe():214] Collecting system info
+2024-11-16 11:30:39,033 INFO    SystemMonitor:19620 [interfaces.py:start():190] Started cpu monitoring
+2024-11-16 11:30:39,042 DEBUG   HandlerThread:19620 [system_info.py:probe():150] Probing system
+2024-11-16 11:30:39,043 INFO    SystemMonitor:19620 [interfaces.py:start():190] Started disk monitoring
+2024-11-16 11:30:39,044 INFO    SystemMonitor:19620 [interfaces.py:start():190] Started gpu monitoring
+2024-11-16 11:30:39,107 INFO    SystemMonitor:19620 [interfaces.py:start():190] Started memory monitoring
+2024-11-16 11:30:39,121 INFO    SystemMonitor:19620 [interfaces.py:start():190] Started network monitoring
+2024-11-16 11:30:39,143 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:39,143 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:39,144 DEBUG   HandlerThread:19620 [gitlib.py:_init_repo():56] git repository is invalid
+2024-11-16 11:30:39,144 DEBUG   HandlerThread:19620 [system_info.py:probe():198] Probing system done
+2024-11-16 11:30:39,144 DEBUG   HandlerThread:19620 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.10.14', 'heartbeatAt': '2024-11-16T06:00:39.043743', 'startedAt': '2024-11-16T06:00:29.975613', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'beyhadh', 'username': 'dhanu', 'executable': 'c:\\Users\\dhanu\\.conda\\envs\\idk_gpu\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2611.0, 'min': 0.0, 'max': 2611.0}, 'cpu_freq_per_core': [{'current': 2611.0, 'min': 0.0, 'max': 2611.0}], 'disk': {'/': {'total': 455.21776962280273, 'used': 367.60289764404297}}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.73318862915039}}
+2024-11-16 11:30:39,144 INFO    HandlerThread:19620 [system_monitor.py:probe():224] Finished collecting system info
+2024-11-16 11:30:39,144 INFO    HandlerThread:19620 [system_monitor.py:probe():227] Publishing system info
+2024-11-16 11:30:39,144 DEBUG   HandlerThread:19620 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-11-16 11:30:39,148 ERROR   HandlerThread:19620 [system_info.py:_save_conda():221] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "c:\Users\dhanu\.conda\envs\idk_gpu\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "c:\Users\dhanu\.conda\envs\idk_gpu\lib\subprocess.py", line 345, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "c:\Users\dhanu\.conda\envs\idk_gpu\lib\subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\Users\dhanu\.conda\envs\idk_gpu\lib\subprocess.py", line 1456, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2024-11-16 11:30:39,149 DEBUG   HandlerThread:19620 [system_info.py:_save_conda():222] Saving conda packages done
+2024-11-16 11:30:39,150 INFO    HandlerThread:19620 [system_monitor.py:probe():229] Finished publishing system info
+2024-11-16 11:30:39,151 DEBUG   SenderThread:19620 [sender.py:send():379] send: files
+2024-11-16 11:30:39,151 INFO    SenderThread:19620 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-11-16 11:30:39,861 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: python_packages
+2024-11-16 11:30:39,861 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: python_packages
+2024-11-16 11:30:39,863 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: stop_status
+2024-11-16 11:30:39,863 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: stop_status
+2024-11-16 11:30:39,865 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:30:39,943 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\wandb-metadata.json
+2024-11-16 11:30:39,944 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\conda-environment.yaml
+2024-11-16 11:30:39,944 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\requirements.txt
+2024-11-16 11:30:40,145 DEBUG   SenderThread:19620 [sender.py:send():379] send: telemetry
+2024-11-16 11:30:40,964 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:30:40,984 INFO    wandb-upload_0:19620 [upload_job.py:push():131] Uploaded file C:\Users\dhanu\AppData\Local\Temp\tmpe6feez8nwandb\ph7u450d-wandb-metadata.json
+2024-11-16 11:30:41,424 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:41,425 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:41,912 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:41,912 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:42,986 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:30:43,801 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:30:43,936 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:43,936 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:44,370 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:44,370 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:45,007 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:30:46,384 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:46,386 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:46,815 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:46,822 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:47,030 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:30:48,830 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:48,830 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:49,034 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:30:49,273 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:49,274 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:49,287 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:30:51,051 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:30:51,277 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:51,277 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:51,715 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:51,715 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:53,071 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:30:53,716 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:53,717 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:54,157 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:54,158 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:54,493 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:30:54,870 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: stop_status
+2024-11-16 11:30:54,871 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: stop_status
+2024-11-16 11:30:54,878 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:30:55,095 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:30:56,167 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:56,167 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:56,604 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:56,605 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:57,113 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:30:58,612 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:58,612 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:30:59,049 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:59,049 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:30:59,124 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:00,167 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:01,060 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:01,065 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:01,141 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:01,500 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:01,500 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:03,169 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:03,513 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:03,513 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:03,952 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:03,952 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:05,170 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:05,182 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:05,962 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:05,962 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:06,394 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:06,395 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:07,206 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:08,407 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:08,407 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:08,838 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:08,839 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:09,235 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:09,859 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: stop_status
+2024-11-16 11:31:09,859 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: stop_status
+2024-11-16 11:31:09,888 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:31:10,224 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:10,847 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:10,847 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:11,253 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\config.yaml
+2024-11-16 11:31:11,254 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:11,297 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:11,297 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:13,261 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:13,308 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:13,308 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:13,759 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:13,760 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:15,282 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:15,648 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:16,301 ERROR   gpu       :19620 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-11-16 11:31:16,303 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:16,304 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:17,315 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:18,312 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:18,312 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:18,753 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:18,753 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:19,334 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:20,742 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:20,766 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:20,767 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:21,205 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:21,205 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:21,357 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:23,210 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:23,211 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:23,398 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:23,654 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:23,655 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:24,876 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: stop_status
+2024-11-16 11:31:24,877 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: stop_status
+2024-11-16 11:31:24,892 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:31:25,309 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: partial_history
+2024-11-16 11:31:25,310 DEBUG   SenderThread:19620 [sender.py:send():379] send: history
+2024-11-16 11:31:25,311 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: summary_record
+2024-11-16 11:31:25,311 INFO    SenderThread:19620 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-11-16 11:31:25,420 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:25,420 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\wandb-summary.json
+2024-11-16 11:31:25,657 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:25,657 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:26,109 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:26,119 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:26,326 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:27,441 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:28,128 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:28,129 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:28,562 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:28,569 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:29,449 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:30,584 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:30,585 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:31,022 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:31,029 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:31,464 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:32,332 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:33,043 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:33,043 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:33,486 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:33,487 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:33,489 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:35,494 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:35,494 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:35,494 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:35,932 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:35,933 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:37,510 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:37,942 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:37,942 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:38,070 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:38,375 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:38,375 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:39,127 DEBUG   SystemMonitor:19620 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-11-16 11:31:39,129 DEBUG   SenderThread:19620 [sender.py:send():379] send: stats
+2024-11-16 11:31:39,535 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:39,891 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: stop_status
+2024-11-16 11:31:39,892 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: stop_status
+2024-11-16 11:31:39,906 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:31:40,379 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:40,381 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:40,812 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:40,813 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:41,549 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:42,828 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:42,828 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:43,204 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:43,268 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:43,277 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:43,577 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:45,282 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:45,282 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:45,602 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:45,719 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:45,725 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:47,626 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:47,734 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:47,734 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:48,175 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:48,176 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:48,776 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:49,652 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:50,189 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:50,189 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:50,624 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:50,624 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:51,662 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:53,149 ERROR   gpu       :19620 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-11-16 11:31:53,150 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:53,150 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:53,676 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:54,527 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:31:54,902 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: stop_status
+2024-11-16 11:31:54,902 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: stop_status
+2024-11-16 11:31:54,917 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:31:55,152 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:55,153 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:55,593 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:55,593 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:55,693 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:57,603 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:57,604 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:31:57,716 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:31:58,049 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:58,049 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:31:59,731 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:00,054 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:00,055 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:00,254 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:00,489 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:00,489 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:01,750 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:02,501 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:02,501 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:02,944 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:02,944 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:03,771 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:04,957 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:04,957 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:05,396 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:05,403 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:05,442 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:05,790 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:06,805 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: partial_history
+2024-11-16 11:32:06,806 DEBUG   SenderThread:19620 [sender.py:send():379] send: history
+2024-11-16 11:32:06,807 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: summary_record
+2024-11-16 11:32:06,808 INFO    SenderThread:19620 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-11-16 11:32:07,408 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:07,409 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:07,805 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:07,805 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\wandb-summary.json
+2024-11-16 11:32:07,850 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:07,850 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:09,137 DEBUG   SenderThread:19620 [sender.py:send():379] send: stats
+2024-11-16 11:32:09,823 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:09,860 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:09,861 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:09,900 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: stop_status
+2024-11-16 11:32:09,901 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: stop_status
+2024-11-16 11:32:09,919 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:32:10,303 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:10,304 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:10,504 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:11,829 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:12,310 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:12,311 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:12,751 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:12,751 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:13,842 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:14,756 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:14,756 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:15,195 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:15,202 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:15,862 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:16,495 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:17,214 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:17,214 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:17,657 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:17,657 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:17,878 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:19,669 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:19,669 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:19,899 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:20,115 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:20,116 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:21,570 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:21,910 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:22,127 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:22,127 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:22,562 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:22,570 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:23,923 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:24,584 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:24,584 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:24,911 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: stop_status
+2024-11-16 11:32:24,911 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: stop_status
+2024-11-16 11:32:24,920 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:32:25,022 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:25,024 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:25,945 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:27,024 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:27,024 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:27,463 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:27,464 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:27,482 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:27,963 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:29,988 ERROR   gpu       :19620 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-11-16 11:32:29,990 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:29,990 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:29,991 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:31,992 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:31,993 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:32,008 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:32,438 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:32,438 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:32,714 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:34,036 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:34,451 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:34,451 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:34,898 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:34,898 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:36,070 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:36,922 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:36,922 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:37,370 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:37,370 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:38,074 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:38,472 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:39,155 DEBUG   SenderThread:19620 [sender.py:send():379] send: stats
+2024-11-16 11:32:39,375 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:39,375 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:39,818 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:39,825 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:39,918 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: stop_status
+2024-11-16 11:32:39,920 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: stop_status
+2024-11-16 11:32:39,933 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:32:40,090 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:41,834 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:41,834 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:42,103 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:42,271 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:42,272 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:44,138 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:44,283 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:44,284 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:44,293 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:44,726 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:44,727 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:46,149 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:46,736 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:46,736 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:47,172 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:47,173 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:48,167 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:49,186 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:49,186 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:49,620 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:49,620 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:49,918 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:50,173 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:51,633 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:51,633 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:52,072 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:52,073 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:52,189 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:54,081 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:54,082 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:54,207 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:54,513 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:54,513 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:54,923 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:32:54,925 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: stop_status
+2024-11-16 11:32:54,925 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: stop_status
+2024-11-16 11:32:55,220 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:55,229 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:32:56,226 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:56,528 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:56,530 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:56,972 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:56,973 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:56,990 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: partial_history
+2024-11-16 11:32:56,991 DEBUG   SenderThread:19620 [sender.py:send():379] send: history
+2024-11-16 11:32:56,991 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: summary_record
+2024-11-16 11:32:56,993 INFO    SenderThread:19620 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-11-16 11:32:57,244 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:57,245 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\wandb-summary.json
+2024-11-16 11:32:58,268 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:58,981 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:58,982 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-11-16 11:32:59,282 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:32:59,424 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:32:59,425 ERROR   gpu       :19620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-11-16 11:33:00,195 DEBUG   SenderThread:19620 [sender.py:send():379] send: telemetry
+2024-11-16 11:33:00,196 DEBUG   SenderThread:19620 [sender.py:send():379] send: exit
+2024-11-16 11:33:00,196 INFO    SenderThread:19620 [sender.py:send_exit():586] handling exit code: 0
+2024-11-16 11:33:00,196 INFO    SenderThread:19620 [sender.py:send_exit():588] handling runtime: 141
+2024-11-16 11:33:00,197 INFO    SenderThread:19620 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-11-16 11:33:00,198 INFO    SenderThread:19620 [sender.py:send_exit():594] send defer
+2024-11-16 11:33:00,198 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:00,198 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 0
+2024-11-16 11:33:00,198 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:00,198 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-11-16 11:33:00,198 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 1
+2024-11-16 11:33:00,199 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:00,199 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 1
+2024-11-16 11:33:00,199 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:00,199 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-11-16 11:33:00,199 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 2
+2024-11-16 11:33:00,199 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:00,199 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 2
+2024-11-16 11:33:00,199 INFO    HandlerThread:19620 [system_monitor.py:finish():203] Stopping system monitor
+2024-11-16 11:33:00,199 DEBUG   SystemMonitor:19620 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-11-16 11:33:00,199 INFO    HandlerThread:19620 [interfaces.py:finish():202] Joined cpu monitor
+2024-11-16 11:33:00,209 DEBUG   SystemMonitor:19620 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-11-16 11:33:00,210 INFO    HandlerThread:19620 [interfaces.py:finish():202] Joined disk monitor
+2024-11-16 11:33:00,282 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:33:00,283 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\wandb-summary.json
+2024-11-16 11:33:00,677 ERROR   gpu       :19620 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-11-16 11:33:00,678 INFO    HandlerThread:19620 [interfaces.py:finish():202] Joined gpu monitor
+2024-11-16 11:33:00,678 INFO    HandlerThread:19620 [interfaces.py:finish():202] Joined memory monitor
+2024-11-16 11:33:00,678 INFO    HandlerThread:19620 [interfaces.py:finish():202] Joined network monitor
+2024-11-16 11:33:00,679 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:00,679 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-11-16 11:33:00,679 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 3
+2024-11-16 11:33:00,679 DEBUG   SenderThread:19620 [sender.py:send():379] send: stats
+2024-11-16 11:33:00,679 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:00,680 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 3
+2024-11-16 11:33:00,680 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:33:00,680 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:00,680 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-11-16 11:33:00,681 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 4
+2024-11-16 11:33:00,681 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:00,681 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 4
+2024-11-16 11:33:00,681 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:00,681 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-11-16 11:33:00,681 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 5
+2024-11-16 11:33:00,681 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:00,681 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 5
+2024-11-16 11:33:00,681 DEBUG   SenderThread:19620 [sender.py:send():379] send: summary
+2024-11-16 11:33:00,682 INFO    SenderThread:19620 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-11-16 11:33:00,683 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:00,683 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-11-16 11:33:00,683 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 6
+2024-11-16 11:33:00,683 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:00,683 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 6
+2024-11-16 11:33:00,683 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:00,683 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-11-16 11:33:00,687 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: status_report
+2024-11-16 11:33:00,987 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 7
+2024-11-16 11:33:00,988 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:00,988 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 7
+2024-11-16 11:33:00,988 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:00,988 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-11-16 11:33:01,207 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: poll_exit
+2024-11-16 11:33:01,285 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\config.yaml
+2024-11-16 11:33:01,285 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:33:01,285 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\wandb-summary.json
+2024-11-16 11:33:02,292 INFO    Thread-28 :19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:33:03,275 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 8
+2024-11-16 11:33:03,276 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: poll_exit
+2024-11-16 11:33:03,276 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:03,276 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 8
+2024-11-16 11:33:03,277 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:03,277 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-11-16 11:33:03,277 INFO    SenderThread:19620 [job_builder.py:build():318] Attempting to build job artifact
+2024-11-16 11:33:03,277 INFO    SenderThread:19620 [job_builder.py:_get_source_type():466] no source found
+2024-11-16 11:33:03,277 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 9
+2024-11-16 11:33:03,277 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:03,278 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 9
+2024-11-16 11:33:03,278 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:03,278 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-11-16 11:33:03,278 INFO    SenderThread:19620 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-11-16 11:33:03,306 INFO    SenderThread:19620 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:33:03,307 INFO    SenderThread:19620 [dir_watcher.py:finish():388] scan: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files
+2024-11-16 11:33:03,307 INFO    SenderThread:19620 [dir_watcher.py:finish():402] scan save: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\conda-environment.yaml conda-environment.yaml
+2024-11-16 11:33:03,307 INFO    SenderThread:19620 [dir_watcher.py:finish():402] scan save: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\config.yaml config.yaml
+2024-11-16 11:33:03,307 INFO    SenderThread:19620 [dir_watcher.py:finish():402] scan save: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log output.log
+2024-11-16 11:33:03,309 INFO    SenderThread:19620 [dir_watcher.py:finish():402] scan save: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\requirements.txt requirements.txt
+2024-11-16 11:33:03,310 INFO    SenderThread:19620 [dir_watcher.py:finish():402] scan save: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\wandb-metadata.json wandb-metadata.json
+2024-11-16 11:33:03,310 INFO    SenderThread:19620 [dir_watcher.py:finish():402] scan save: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\wandb-summary.json wandb-summary.json
+2024-11-16 11:33:03,314 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 10
+2024-11-16 11:33:03,315 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:03,315 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 10
+2024-11-16 11:33:03,315 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:03,317 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-11-16 11:33:03,317 INFO    SenderThread:19620 [file_pusher.py:finish():172] shutting down file pusher
+2024-11-16 11:33:03,986 INFO    wandb-upload_0:19620 [upload_job.py:push():131] Uploaded file c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\config.yaml
+2024-11-16 11:33:04,051 INFO    wandb-upload_3:19620 [upload_job.py:push():131] Uploaded file c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\wandb-summary.json
+2024-11-16 11:33:04,121 INFO    wandb-upload_2:19620 [upload_job.py:push():131] Uploaded file c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\requirements.txt
+2024-11-16 11:33:04,231 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: poll_exit
+2024-11-16 11:33:04,231 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: poll_exit
+2024-11-16 11:33:04,276 INFO    wandb-upload_1:19620 [upload_job.py:push():131] Uploaded file c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\files\output.log
+2024-11-16 11:33:04,479 INFO    Thread-27 (_thread_body):19620 [sender.py:transition_state():614] send defer: 11
+2024-11-16 11:33:04,479 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:04,479 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 11
+2024-11-16 11:33:04,480 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:04,480 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-11-16 11:33:04,480 INFO    SenderThread:19620 [file_pusher.py:join():178] waiting for file pusher
+2024-11-16 11:33:04,480 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 12
+2024-11-16 11:33:04,480 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:04,481 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 12
+2024-11-16 11:33:04,481 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:04,481 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-11-16 11:33:04,481 INFO    SenderThread:19620 [file_stream.py:finish():614] file stream finish called
+2024-11-16 11:33:05,251 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: poll_exit
+2024-11-16 11:33:05,316 INFO    SenderThread:19620 [file_stream.py:finish():618] file stream finish is done
+2024-11-16 11:33:05,317 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 13
+2024-11-16 11:33:05,317 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: poll_exit
+2024-11-16 11:33:05,317 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:05,318 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 13
+2024-11-16 11:33:05,318 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:05,318 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-11-16 11:33:05,318 INFO    SenderThread:19620 [sender.py:transition_state():614] send defer: 14
+2024-11-16 11:33:05,318 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: defer
+2024-11-16 11:33:05,319 INFO    HandlerThread:19620 [handler.py:handle_request_defer():172] handle defer: 14
+2024-11-16 11:33:05,319 DEBUG   SenderThread:19620 [sender.py:send():379] send: final
+2024-11-16 11:33:05,319 DEBUG   SenderThread:19620 [sender.py:send():379] send: footer
+2024-11-16 11:33:05,319 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: defer
+2024-11-16 11:33:05,319 INFO    SenderThread:19620 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-11-16 11:33:05,320 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: poll_exit
+2024-11-16 11:33:05,320 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: poll_exit
+2024-11-16 11:33:05,322 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: internal_messages
+2024-11-16 11:33:05,322 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: server_info
+2024-11-16 11:33:05,322 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: get_summary
+2024-11-16 11:33:05,323 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: sampled_history
+2024-11-16 11:33:05,323 DEBUG   SenderThread:19620 [sender.py:send_request():406] send_request: server_info
+2024-11-16 11:33:05,594 DEBUG   HandlerThread:19620 [handler.py:handle_request():146] handle_request: shutdown
+2024-11-16 11:33:05,594 INFO    HandlerThread:19620 [handler.py:finish():866] shutting down handler
+2024-11-16 11:33:06,326 INFO    WriterThread:19620 [datastore.py:close():296] close: c:\Users\dhanu\Downloads\pranith\wandb\run-20241116_113029-snu7ifri\run-snu7ifri.wandb
+2024-11-16 11:33:06,602 INFO    SenderThread:19620 [sender.py:finish():1546] shutting down sender
+2024-11-16 11:33:06,602 INFO    SenderThread:19620 [file_pusher.py:finish():172] shutting down file pusher
+2024-11-16 11:33:06,602 INFO    SenderThread:19620 [file_pusher.py:join():178] waiting for file pusher

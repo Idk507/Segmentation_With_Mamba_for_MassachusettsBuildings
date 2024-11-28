@@ -1,0 +1,181 @@
+
+Training:   3%|▎         | 1/34 [00:01<00:40,  1.22s/it]
+Epoch 1/50
+
+Training:   6%|▌         | 2/34 [00:03<00:54,  1.70s/it]
+
+Training:   9%|▉         | 3/34 [00:04<00:46,  1.51s/it]
+
+Training:  12%|█▏        | 4/34 [00:05<00:43,  1.45s/it]
+
+Training:  18%|█▊        | 6/34 [00:09<00:41,  1.49s/it]
+Error in batch 4: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  21%|██        | 7/34 [00:10<00:40,  1.50s/it]
+
+Training:  26%|██▋       | 9/34 [00:12<00:33,  1.33s/it]
+Error in batch 7: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  32%|███▏      | 11/34 [00:15<00:28,  1.22s/it]
+Error in batch 9: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  38%|███▊      | 13/34 [00:17<00:24,  1.19s/it]
+Error in batch 11: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  44%|████▍     | 15/34 [00:19<00:22,  1.18s/it]
+Error in batch 13: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  47%|████▋     | 16/34 [00:21<00:22,  1.23s/it]
+
+Training:  53%|█████▎    | 18/34 [00:23<00:18,  1.19s/it]
+Error in batch 16: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  59%|█████▉    | 20/34 [00:25<00:16,  1.16s/it]
+Error in batch 18: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error in batch 19: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error in batch 20: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  65%|██████▍   | 22/34 [00:27<00:13,  1.14s/it]
+
+Training:  68%|██████▊   | 23/34 [00:29<00:12,  1.15s/it]
+Error in batch 23: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+
+Training:  79%|███████▉  | 27/34 [00:33<00:08,  1.17s/it]
+Error in batch 25: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error in batch 26: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+
+Training:  88%|████████▊ | 30/34 [00:37<00:04,  1.18s/it]
+Error in batch 28: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error in batch 29: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  94%|█████████▍| 32/34 [00:40<00:02,  1.29s/it]
+Error in batch 31: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Training: 100%|██████████| 34/34 [00:43<00:00,  1.28s/it]
+Validating:   0%|          | 0/1 [00:00<?, ?it/s]
+Error in batch 33: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error during validation: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Validating: 100%|██████████| 1/1 [00:01<00:00,  1.06s/it]
+
+Training:   6%|▌         | 2/34 [00:02<00:41,  1.29s/it]
+Error in batch 0: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error in batch 1: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error in batch 2: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  12%|█▏        | 4/34 [00:04<00:34,  1.17s/it]
+Error in batch 4: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  18%|█▊        | 6/34 [00:07<00:32,  1.16s/it]
+
+Training:  21%|██        | 7/34 [00:08<00:31,  1.17s/it]
+Error in batch 7: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  26%|██▋       | 9/34 [00:10<00:28,  1.15s/it]
+Error in batch 9: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+
+Training:  38%|███▊      | 13/34 [00:15<00:24,  1.17s/it]
+Error in batch 11: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error in batch 12: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+
+Training:  47%|████▋     | 16/34 [00:19<00:21,  1.21s/it]
+Error in batch 14: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  53%|█████▎    | 18/34 [00:21<00:18,  1.17s/it]
+
+Training:  56%|█████▌    | 19/34 [00:22<00:17,  1.17s/it]
+Error in batch 17: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error in batch 18: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error in batch 19: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  62%|██████▏   | 21/34 [00:24<00:14,  1.15s/it]
+Error in batch 21: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  68%|██████▊   | 23/34 [00:27<00:12,  1.16s/it]
+
+Training:  74%|███████▎  | 25/34 [00:29<00:10,  1.14s/it]
+Error in batch 24: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  79%|███████▉  | 27/34 [00:31<00:07,  1.14s/it]
+Error in batch 26: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  82%|████████▏ | 28/34 [00:32<00:06,  1.14s/it]
+Error in batch 28: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  88%|████████▊ | 30/34 [00:35<00:04,  1.18s/it]
+
+
+Training:  97%|█████████▋| 33/34 [00:39<00:01,  1.24s/it]
+Error in batch 31: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Training: 100%|██████████| 34/34 [00:40<00:00,  1.19s/it]
+Validating:   0%|          | 0/1 [00:00<?, ?it/s]
+Error in batch 33: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Error during validation: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Validating: 100%|██████████| 1/1 [00:01<00:00,  1.18s/it]
+Training:   3%|▎         | 1/34 [00:01<00:43,  1.30s/it]
+
+Training:   9%|▉         | 3/34 [00:03<00:37,  1.22s/it]
+Error in batch 1: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  12%|█▏        | 4/34 [00:04<00:35,  1.20s/it]
+
+Training:  18%|█▊        | 6/34 [00:07<00:35,  1.26s/it]
+Error in batch 4: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  24%|██▎       | 8/34 [00:09<00:32,  1.24s/it]
+Error in batch 6: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  26%|██▋       | 9/34 [00:11<00:30,  1.24s/it]
+
+Training:  29%|██▉       | 10/34 [00:13<00:36,  1.53s/it]
+
+Training:  32%|███▏      | 11/34 [00:14<00:34,  1.50s/it]
+
+Training:  35%|███▌      | 12/34 [00:17<00:38,  1.75s/it]
+
+Training:  38%|███▊      | 13/34 [00:18<00:35,  1.69s/it]
+
+Training:  44%|████▍     | 15/34 [00:22<00:31,  1.65s/it]
+
+Training:  47%|████▋     | 16/34 [00:23<00:26,  1.50s/it]
+Error in batch 14: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  53%|█████▎    | 18/34 [00:25<00:22,  1.42s/it]
+Error in batch 16: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  56%|█████▌    | 19/34 [00:27<00:20,  1.37s/it]
+
+Training:  59%|█████▉    | 20/34 [00:28<00:18,  1.30s/it]
+
+Training:  62%|██████▏   | 21/34 [00:30<00:21,  1.62s/it]
+
+Training:  68%|██████▊   | 23/34 [00:33<00:17,  1.58s/it]
+Error in batch 21: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  71%|███████   | 24/34 [00:35<00:15,  1.54s/it]
+
+Training:  74%|███████▎  | 25/34 [00:36<00:13,  1.46s/it]
+Error in batch 24: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  79%|███████▉  | 27/34 [00:39<00:09,  1.43s/it]
+
+Training:  82%|████████▏ | 28/34 [00:40<00:08,  1.45s/it]
+Error in batch 27: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  88%|████████▊ | 30/34 [00:43<00:05,  1.39s/it]
+
+Training:  94%|█████████▍| 32/34 [00:45<00:02,  1.31s/it]
+Error in batch 30: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+
+Training:  97%|█████████▋| 33/34 [00:47<00:01,  1.37s/it]
+Training: 100%|██████████| 34/34 [00:48<00:00,  1.44s/it]
+Validating:   0%|          | 0/1 [00:00<?, ?it/s]
+Validating: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]
+Training:   3%|▎         | 1/34 [00:01<00:51,  1.55s/it]
+Error during validation: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
+Epoch 4/50
+
+Training:   6%|▌         | 2/34 [00:03<00:51,  1.60s/it]
+Error in batch 1: Sizes of tensors must match except in dimension 1. Expected size 1024 but got size 256 for tensor number 1 in the list.
